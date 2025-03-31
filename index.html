@@ -3,11 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>供应商导航网站</title>
+    <title>供应商导航网站 - 连接全球优质供应链资源</title>
+    
+    <!-- SEO优化 -->
+    <meta name="description" content="专业的供应商导航平台，提供大厂代理商、机加工、注塑、钣金、线束、PCB等工厂资源，助力企业采购决策。">
+    <meta name="keywords" content="供应商导航,电子元器件代理,机加工工厂,注塑工厂,钣金加工,PCB制造,产品设计,工厂直供">
+    <meta name="author" content="供应商导航中心">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://您的网站域名/" />
+    
+    <!-- 性能优化 -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <!-- 社交分享优化 -->
+    <meta property="og:title" content="供应商导航中心 - 连接全球优质供应链资源">
+    <meta property="og:description" content="专业的供应商导航平台，提供大厂代理商、机加工、注塑、钣金、线束、PCB等工厂资源">
+    <meta property="og:image" content="https://您的网站域名/images/logo.png">
+    <meta property="og:url" content="https://您的网站域名/">
+    <meta property="og:type" content="website">
+    
+    <!-- 移动设备优化 -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q56D3Q1D9Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Q56D3Q1D9Y');
+    </script>
+    
+    <!-- 样式表 -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "供应商导航中心",
+        "description": "连接全球优质供应链资源，助力您的采购决策",
+        "url": "https://您的网站域名/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://您的网站域名/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <style>
+        /* 加载状态指示器样式 */
+        .loading-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            flex-direction: column;
+        }
+
+        .loading-indicator.active {
+            display: flex;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #6fabd7;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* 面包屑导航样式 */
+        .breadcrumb {
+            padding: 15px 20px;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .breadcrumb ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .breadcrumb li {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .breadcrumb li:not(:last-child)::after {
+            content: "/";
+            margin: 0 10px;
+            color: #6c757d;
+        }
+
+        .breadcrumb a {
+            color: #6fabd7;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb li[aria-current="page"] {
+            color: #333b47;
+            font-weight: 500;
+        }
+
+        /* 页脚样式优化 */
+        .footer {
+            background-color: #333b47;
+            color: #fff;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-section {
+            padding: 0 15px;
+        }
+
+        .footer-section h3 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+            display: block;
+        }
+
+        .footer-section ul li a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .footer-section {
+                padding: 0;
+                text-align: center;
+            }
+
+            .footer-section ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .footer-section ul li {
+                margin: 0;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- 加载状态指示器 -->
+    <div id="loading-indicator" class="loading-indicator active">
+        <div class="spinner"></div>
+        <p>加载中...</p>
+    </div>
+
     <div class="container">
         <!-- 顶部Banner -->
         <header class="top-banner">
@@ -19,6 +250,25 @@
                 <p>连接全球优质供应链资源，助力您的采购决策</p>
             </div>
         </header>
+
+        <!-- 搜索框 -->
+        <div class="search-container">
+            <form action="/search" method="get" class="search-form">
+                <input type="text" name="q" placeholder="搜索供应商..." class="search-input">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <!-- 面包屑导航 -->
+        <nav class="breadcrumb" aria-label="面包屑导航">
+            <ol>
+                <li><a href="/"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="/categories">分类</a></li>
+                <li aria-current="page">大厂代理商</li>
+            </ol>
+        </nav>
 
         <div class="main-content">
             <!-- 左侧导航栏 -->
@@ -118,8 +368,53 @@
                 </section>
             </main>
         </div>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>供应商导航中心致力于为采购人员提供优质的供应商资源，助力企业采购决策。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="/about">关于我们</a></li>
+                        <li><a href="/contact">联系我们</a></li>
+                        <li><a href="/privacy">隐私政策</a></li>
+                        <li><a href="/terms">使用条款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>邮箱：contact@您的网站域名</p>
+                    <p>电话：+86 XXX XXXX XXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 供应商导航中心. 保留所有权利.</p>
+            </div>
+        </footer>
     </div>
 
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" title="返回顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="js/main.js"></script>
+    <script>
+        // 加载状态指示器
+        window.addEventListener('load', function() {
+            document.getElementById('loading-indicator').classList.remove('active');
+        });
+        
+        // 页面跳转时显示加载指示器
+        document.querySelectorAll('a:not([href^="#"])').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('loading-indicator').classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html> 
